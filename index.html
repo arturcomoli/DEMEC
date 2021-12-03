@@ -14,9 +14,14 @@
 <body>
     <header>
         <!-- logo DEMEC -->
-        <img src="/assets/img/ufpr_alta.jpg" alt="Logo DEMEC">
+        <img src="/assets/img/ufpr_alta.jpg" alt="Logo DEMEC" />
         <!-- nav>ul>li*7 - Menu do Header-->
-        <nav>
+
+        <nav class="menu--mobile">
+            <i class="fas fa-bars"></i>
+        </nav>
+
+        <nav class="menu--desktop">
             <ul>
                 <li>Departamento <i class="fas fa-angle-down"></i></li>
                 <li>Graduação<i class="fas fa-angle-down"></i></li>
@@ -27,18 +32,28 @@
                 <li>Contato</li>
             </ul>
         </nav>
+
     </header>
 
     <main>
         <section class="middle">
-        <!-- Banner slider com radio buttons do lado esquerdo -->
+            <!-- Banner slider com radio buttons do lado esquerdo -->
 
             <aside class="banner">
-                <img src="/assets/img/download.jpeg" alt="">
+                <div class="botoes--radio">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                </div>
+
+                <img src="/assets/img/download.jpeg" alt="" />
+
+
             </aside>
 
-            <aside class="4-squares">
-        <!-- 4 botões do lado direito -->
+            <aside class="middle--squares">
+                <!-- 4 botões do lado direito -->
                 <div>
                     <a href="#">Sou Vestibulando</a>
                 </div>
@@ -58,24 +73,42 @@
         </section>
 
 
-        <article>
+        <article class="noticias">
             <!-- carrossel de últimas notícias -->
             <h2>Últimas Notícias</h2>
-            
+            <figure>
+                <img src="/assets/img/F22-Raptor.jpg" alt="" />
+                <figcaption>F22-Raptor</figcaption>
+            </figure>
+            <h3>Título da notícia</h3>
+            <p>Texto da notícia</p>
 
         </article>
 
-        <aside>
-            <!-- Botões circulares (4) -->
+        <aside class="botoes--redondo">
+            <!-- 4 Círculos laranja -->
+            <img src="/assets/img/icone-cercle-rempli-orange.png" alt="" />
+            <img src="/assets/img/icone-cercle-rempli-orange.png" alt="" />
+            <img src="/assets/img/icone-cercle-rempli-orange.png" alt="" />
+            <img src="/assets/img/icone-cercle-rempli-orange.png" alt="" />
         </aside>
 
-        <aside>
+        <aside class="parceiros">
             <!-- Parceiros -->
+            <h2>Parceiros</h2>
+            <div class="div--parceiros"></div>
         </aside>
     </main>
 
     <footer>
         <!-- Breve descrição do endereço, logo da UFPR e do DEMEC à direita.  -->
+        <p>DEMEC | Departamento de Engenharia Mecãnica</p>
+        <p>Bloco IV do Setor de Tecnologia | Centro Politécnico (III)</p>
+        <p>Bairro Jardim das Américas | Curitiba | Paraná</p>
+        <div class="imagens--footer">
+            <img src="/assets/img/footer1.png" alt="">
+            <img src="/assets/img/footer1.png" alt="">
+        </div>
     </footer>
 </body>
 
