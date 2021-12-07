@@ -5,9 +5,11 @@ body {
 header {
     height: 100px;
     background-color: #1b2d2a;
-    display: flex;
+    /* display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    */
+    overflow: hidden; 
+    position: relative;
 }
 
 header img {
@@ -16,10 +18,69 @@ header img {
     margin: 0 0 0 10%;
 }
 
-.menu--mobile {
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: #1b2d2a;
     color: #e66000;
     font-size: 40px;
+    margin: 0 10% 0 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+}
+
+.nav--menu {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #1b2d2a;
+    right: 0px;
+    top: 100px;
+    position: fixed;
+    z-index: 1;
+    height: 88%;
+    overflow: auto;    
+}
+
+.hidden {
+    display: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #e66000;
+}
+
+.nav--link {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link--icone {
     margin: 0 10% 0 0;
+}
+
+.nav--item {
+    width: 100%;
+}
+
+.nav--item i {
+    margin-left: 10px;
+}
+
+.nav--submenu {
+    background-color: #ffffff;
+}
+
+.nav--submenu li{
+    padding: 10px 0;
+    width: 100%;    
 }
 
 .menu--desktop {
