@@ -26,8 +26,7 @@ let posStatus = false;
 
 for (let i = 0; i < subLink.length; i++) {
     subLink[i].addEventListener("click", function acionarMenus(event) {
-        let secao = event.currentTarget
-        
+        let secao = event.currentTarget        
 
         if (secao.id === "departamento" && departamentoStatus === false) {
             subMenu[0].classList.remove("hidden")
