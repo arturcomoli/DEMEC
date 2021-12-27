@@ -100,7 +100,8 @@ header img {
 
 .banner img {
     width: 100%;
-    height: 250px;        
+    height: 250px;    
+    transition: margin-left 500ms ease-in;    
 }
 
 .teste{
@@ -197,7 +198,7 @@ header img {
 }
 
 .noticias img {
-    width: 80%;
+    width: 80%;    
 }
 
 .noticias figcaption {

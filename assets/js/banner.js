@@ -23,7 +23,7 @@ const imagensObj = [
         imgSrc: "./assets/img/banner/beluga.jpg",
         imgAlt: "Airbus A350 Beluga",
         imgDesc: "Foto do Airbus Beluga em voo"
-    }    
+    }
 ];
 
 const arrImg = [
@@ -33,8 +33,6 @@ const arrImg = [
     "./assets/img/banner/boeing-777x-capa2019-01.jpg",
     "./assets/img/banner/beluga.jpg",
 ]
-
-console.log(imagensObj)
 
 /* Criação dos radio buttons */
 const radioContainer = document.querySelector(".teste")
@@ -48,18 +46,19 @@ function criarBotao() {
         radio.name = "radio"
         const span = document.createElement("span")
         span.classList.add("span")
+        span.id = `img${i}`
 
         label.appendChild(radio)
         label.appendChild(span)
         radioContainer.appendChild(label)
     }
 }
-criarBotao()
+criarBotao();
 
 /* Associação das imagens com os botões */
 const imgBanner = document.querySelector(".banner>img")
 
-function banner (arrImg, imgBanner, tempo) {
+function banner(arrImg, imgBanner, tempo) {
     let contador = 0;
 
     setInterval(() => {
@@ -70,9 +69,14 @@ function banner (arrImg, imgBanner, tempo) {
             contador = 0;
         }
     }, tempo);
+
+    const radioBotao = document.querySelectorAll(".span")    
+
+    for (let i = 0; i < radioBotao.length; i++) {
+        radioBotao[i].addEventListener("click", () => {
+            imgBanner.src = arrImg[i]
+            contador = i;
+        })
+    }
 }
 banner(arrImg, imgBanner, 5000)
-
-const radioBotao = document.querySelectorAll(".span")
-console.log(radioBotao)
-
