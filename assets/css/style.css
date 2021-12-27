@@ -87,10 +87,6 @@ header img {
     display: none;
 }
 
-.middle {
-
-}
-
 .banner {
     display: flex;
     justify-content: center;
@@ -183,6 +179,10 @@ header img {
     align-items: center;   
 }
 
+.titulo--noticias {
+    display: none;
+}
+
 .noticias {
     text-align: center;
     margin: 3% 0 3% 0;
@@ -201,7 +201,7 @@ header img {
     width: 80%;    
 }
 
-.noticias figcaption {
+figcaption {
     display: none;
 }
 
@@ -230,6 +230,10 @@ header img {
 
 .fa-angle-right{    
     left: 80%;
+}
+
+.noticias--desktop {
+    display: none;
 }
 
 .botoes--redondo {
@@ -293,4 +297,199 @@ footer span {
 footer img {
     width: 30%;
     padding: 25px 0;
+}
+
+@media screen and (min-width: 1024px){
+    header {
+        height: 250px;        
+    }
+
+    header img {
+        width: 250px;
+        height: 150px;        
+        margin: 3% 0 3% 6%;
+    }
+
+    .navbar {
+        display: none;        
+    }
+
+    .link--icone {
+        display: none;
+    }
+
+    .menu--desktop {
+        display: flex;   
+        justify-content: space-between;     
+        align-items: center;
+    }
+
+    .menu--desktop ul {
+        font-size: 17px;
+        color: #e66000;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu--desktop ul li {        
+        margin: 10px;
+    }
+
+    .menu--desktop ul li i {
+        margin-left: 3px;        
+    }
+
+    .middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 500px;
+    }
+
+    .banner {
+        flex-basis: 50%;        
+    }
+
+    .banner img {
+        height: 100%;        
+    }
+
+    .middle--squares {
+        flex-basis: 50%;
+        height: 100%;        
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .middle--squares div {
+        height: 120px;
+        width: 30%;
+        /* margin: 0; */        
+    }
+
+    .middle--squares div:first-child {
+        margin: 16.5% 0.5% 0 5%;
+        width: 40%;
+    }   
+
+    .middle--squares div:nth-child(2) {
+        margin: 16.5% 5% 0 0.5%;
+    }
+
+    .middle--squares div:nth-child(3) {
+        margin: 0 0.5% 16.5% 5%;
+        width: 40%;
+    }
+
+    .middle--squares div:last-child {
+        margin: 0 5% 16.5% 0.5%;
+    }
+
+    .noticias {
+        display: none;
+    }
+
+    .noticias--desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .titulo--noticias {      
+        display: block;          
+        color: #1b2d2a;
+        font-size: 25px;
+        border-bottom: 5px solid #e66000;
+        width: 95%;
+        margin: 2%;  
+        padding: 0;
+    }
+
+    .noticias--desktop img {
+        width: 100%;        
+    }
+
+    .quadro--noticia {
+        margin: 2%;
+        text-align: center;        
+    }
+
+    .botoes--redondo {
+        flex-wrap: nowrap;
+    }
+
+    .botoes--redondo img {
+        width: 15%;
+        margin: 5% 0;
+    }
+
+    .cima {
+        margin: 0;
+    }
+    
+    .baixo {
+        margin: 0;
+    }
+
+    .parceiros {
+        text-align: left;
+    }
+
+    .parceiros h2 {
+        margin: 0 2%;
+        border-bottom: 5px solid #e66000;
+        width: 95%;
+    }
+
+    .container--parceiros {
+        display: flex;
+        justify-content: center;
+        align-items: center;        
+    }
+
+    .parceiros .div--parceiros {
+        margin: 3% 1%;
+    }
+
+    footer {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        clear: both;
+        overflow: hidden;
+    }
+
+    footer img {
+        width: 20%;     
+        margin: 0 2% 0 2%;          
+    }    
+
+    .texto--footer {
+        width: 40%;
+        margin: 4%;
+        clear: both;
+        display: inline-block;
+        font-size: 23px;
+    }
+
+    .texto--footer p {
+        padding: 0 0 12px 0;
+    }
+
+    .texto--footer span {
+        display: block;
+    }
+
+    .imagens--footer {        
+        clear: both;
+        width: 40%;
+        margin: 0 4% 0 0;
+        float: right;
+        text-align: right;
+    }
 }
