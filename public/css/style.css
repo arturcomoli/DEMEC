@@ -1,5 +1,154 @@
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #1b2d2a;
+    color: #e66000;
+    font-size: 25px;
+}
 
+header img {
+    width: 75px;
+}
 
 .menu {
     display: none;
+}
+
+.banner-slider {
+    width: 100%;
+}
+
+.banner-slider a {
+    height: 0;
+}
+
+.banner-slider img {
+    width: 100%;
+}
+
+.botoes-sou {
+    background-color: #e66000;
+    text-align: center;
+}
+
+.botoes-sou button{
+    border: none;
+    color: #e66000;
+    background-color: #1b2d2a;
+    width: 80%;
+    height: 55px;
+    margin: 5px auto;
+}
+
+.noticias {
+    background-color: #f6fad6;
+    padding: 15px 0;
+}
+
+.noticias h2 {
+    width: 37%;
+    text-align: center;
+    border-bottom: 4px solid #e66000;
+    margin: 0 auto 10px auto;
+    padding: 0 0 3px 0;
+}
+
+.container-noticias {
+    text-align: center;
+}
+
+.container-noticias img {
+    width: 80%;
+    height: 140px;
+}
+
+.container-noticias a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container-noticias h3 {
+    font-weight: bold;
+    margin: 5px;
+}
+
+.botoes-aside {
+    background-color: #1b2d2a;    
+}
+
+.botoes-aside button {
+    border: none;
+    background-color: #e66000;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.botoes-flex {
+    width: 80%;
+    margin: 0px auto;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;    
+    /* align-items: flex-end;     */
+}
+
+.botoes-cima a {
+    align-self: flex-end;
+    padding: 20px 0 10px 0;
+}
+
+.botoes-baixo a {
+    align-self: flex-start;
+    padding: 10px 0 20px 0;
+}
+
+.parceiros {
+    background-color: #f6fad6;
+    text-align: center;
+    padding: 15px 0 45px 0;
+}
+
+.parceiros h2 {
+    width: 30%;
+    border-bottom: 4px solid #e66000;
+    margin: 0 auto 40px auto;
+    padding: 0 0 3px 0;
+}
+
+.parceiros img {
+    width: 80%;
+    height: 140px;
+}
+
+.container-parceiros {
+    text-align: center;    
+}
+
+.container-parceiros a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    background-color: #1b2d2a;
+    color: #e66000;
+    text-align: center;
+    font-size: 13px;
+}
+
+footer img {
+    width: 30%;
+    height: 60px;
+    margin: 0 10px;
+}
+
+footer p:first-child {
+    font-weight: bold;
+    padding: 3px 0;
+}
+.container-imagens {
+    padding: 15px 0;
+    /* display: flex;
+    justify-content: space-evenly; */
 }
