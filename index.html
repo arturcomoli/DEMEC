@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./public/css/reset.css">
     <link rel="stylesheet" href="./public/css/style.css">
     <script src="https://kit.fontawesome.com/27a399c461.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <link rel="stylesheet" href="./public/css/banner.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
     <title>DEMEC - UFPR</title>
 </head>
 
@@ -127,9 +130,12 @@
         <!-- Banner slider com radio buttons do lado esquerdo -->
         <!-- 4 botões do lado direito -->
         <section>
-            <div class="banner-slider">
-                <a href="#"><img src="https://picsum.photos/300" alt=""></a>
-            </div>
+            <ul class="banner">
+                <li><a href="#"><img src="https://picsum.photos/200" alt="" class="img-banner"></a></li>
+                <li><a href="#"><img src="https://picsum.photos/200" alt="" class="img-banner"></a></li>
+                <li><a href="#"><img src="https://picsum.photos/200" alt="" class="img-banner"></a></li>
+                <li><a href="#"><img src="https://picsum.photos/200" alt="" class="img-banner"></a></li>
+            </ul>
             <div class="botoes-sou">
                 <button>Sou Vestibulando</button>
                 <button>Sou Aluno DEMEC</button>
@@ -144,19 +150,52 @@
             <ul class="container-noticias">
                 <li>
                     <a href="#">
-                        <img src="https://picsum.photos/300" alt="">
-                        <h3>Título da notícia</h3>
-                        <p>Texto</p>
+                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
+                        <h3>Título da notícia 1</h3>
+                        <p>Texto 1</p>
+                    </a>                    
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
+                        <h3>Título da notícia 2</h3>
+                        <p>Texto 2</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
+                        <h3>Título da notícia 2</h3>
+                        <p>Texto 2</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
+                        <h3>Título da notícia 2</h3>
+                        <p>Texto 2</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
+                        <h3>Título da notícia 2</h3>
+                        <p>Texto 2</p>
                     </a>
                 </li>
             </ul>
+            <div class="container-controller">
+                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-right"></i>
+            </div>
+            
         </article>
 
         <aside class="botoes-aside">
             <!-- Botões circulares (4) -->
             <div class="botoes-flex botoes-cima">
                 <a href="#"><button>Botão 1</button></a>
-                <a href="#"><button>Botão 2</button></a>                
+                <a href="#"><button>Botão 2</button></a>
             </div>
 
             <div class="botoes-flex botoes-baixo">
@@ -190,6 +229,13 @@
             <img src="https://picsum.photos/300" alt="">
         </div>
     </footer>
+
+    <!-- <script type ="module" src="./src/app.js"></script> -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="./src/controllers/banner.js"></script>
+    <script src="./src/controllers/noticias.js"></script>
+    <script src="./src/app.js"></script>
 </body>
 
 </html>
