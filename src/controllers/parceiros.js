@@ -24,18 +24,3 @@ var parceiros = tns({
   edgePadding: 50,
   // loop: false,
 });
-
-// var parceiros = tns({
-//   container: ".container-parceiros",
-//   items: 1,
-//   speed: 600,
-//   autoplay: false,
-//   autoplayTimeout: 3500,
-//   autoplayButtonOutput: false,
-//   swipeAngle: false,
-//   nav: false,
-//   controlsPosition: "bottom",
-//   controlsContainer: ".container-controller2",
-//   // navPosition: "bottom",
-//   controls: true,
-// });
