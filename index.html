@@ -1,268 +1,255 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/reset.css">
-    <link rel="stylesheet" href="./public/css/style.css">
-    <script src="https://kit.fontawesome.com/27a399c461.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
-    <link rel="stylesheet" href="./public/css/banner.css">
-    <link rel="stylesheet" href="./public/css/ace-responsive-menu.css">
-    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/reset.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/27a399c461.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css"
+    />
+    <link rel="stylesheet" href="./public/css/banner.css" />
+    <link rel="stylesheet" href="./public/css/ace-responsive-menu.css" />
+    <!--[if (lt IE 9)
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script
+    ><![endif]-->
     <title>DEMEC - UFPR</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- logo DEMEC -->
-        <div>
-            <img src="./public/img/logo.png" alt="Logo UFPR" />
-            <i class="fas fa-bars"></i>
-        </div>
-
-        <!-- nav>ul>li*7 - Menu do Header-->
+      <!-- logo DEMEC -->
+      <div>
+        <img src="./public/img/logo.png" alt="Logo UFPR" />
         <nav class="menu">
-            <ul>
-                <li>
-                    <!-- <a href="#">Departamento <i class="fas fa-angle-down"></i></a> -->
-                    <span>Departamento <i class="fas fa-angle-down"></i></span>
-                <li>
-                    <a href="#">Equipe</a>
-                </li>
-                <li>
-                    <a href="#">Laboratório</a>
-                </li>
-                <li>
-                    <a href="#">Parceiros</a>
-                </li>
-                <li>
-                    <a href="#">Conheça o Departamento</a>
-                </li>
-                </li>
-
-                <li>
-                    <!-- <a href="#">Graduação <i class="fas fa-angle-down"></i></a> -->
-                    <span>Graduação <i class="fas fa-angle-down"></i></span>
-                <li>
-                    <a href="#">Curso Diurno</a>
-                </li>
-                <li>
-                    <a href="#">Curso Noturno</a>
-                </li>
-                <li>
-                    <a href="#">Vestibular</a>
-                </li>
-                <li>
-                    <a href="#">Calendário Letivo UFPR</a>
-                </li>
-                </li>
-
-                <li>
-                    <!-- <a href="#">Extensão <i class="fas fa-angle-down"></i></a> -->
-                    <span>Extensão <i class="fas fa-angle-down"></i></span>
-                <li>
-                    <a href="#">Projeto 1</a>
-                </li>
-                <li>
-                    <a href="#">Projeto 2</a>
-                </li>
-                <li>
-                    <a href="#">Projeto 3</a>
-                </li>
-                <li>
-                    <a href="#">Projeto 4</a>
-                </li>
-                <li>
-                    <a href="#">Projeto 5</a>
-                </li>
-                <li>
-                    <a href="#">Projeto 6</a>
-                </li>
-                <li>
-                    <a href="#">Projeto 7</a>
-                </li>
-                <li>
-                    <a href="#">Projeto 8</a>
-                </li>
-                </li>
-
-                <li>
-                    <!-- <a href="#">Pós Graduação <i class="fas fa-angle-down"></i></a> -->
-                    <span>Pós Graduação <i class="fas fa-angle-down"></i></span>
-                <li>
-                    <a href="#">PIPE</a>
-                </li>
-                <li>
-                    <a href="#">PGMEC</a>
-                </li>
-                <li>
-                    <a href="#">InSTA</a>
-                </li>
-                <li>
-                    <a href="#">Projetos de Pesquisa</a>
-                </li>
-                <li>
-                    <a href="#">Iniciação Científica</a>
-                </li>
-                <li>
-                    <a href="#">Laboratório</a>
-                </li>
-                </li>
-
-                <li>
-                    Notícias
-                </li>
-
-                <li>
-                    FAQ
-                </li>
-
-                <li>
-                    Contato
-                </li>
-            </ul>
+          <div class="menu-toggle">
+            <!-- <h3>Menu</h3> -->
+            <button type="button" id="menu-btn">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <ul
+            id="demoMenu"
+            class="ace-responsive-menu"
+            data-menu-style="horizontal"
+          >
+            <li>
+              <a href="#">Departamento <i class="far fa-angle-down"></i></a>
+              <ul>
+                <li><a href="#">Equipe</a></li>
+                <li><a href="#">Laboratórios</a></li>
+                <li><a href="#">Parceiros</a></li>
+                <li><a href="#">Conheça o Departamento</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Graduação <i class="far fa-angle-down"></i></a>
+              <ul>
+                <li><a href="#">Curso Diurno</a></li>
+                <li><a href="#">Curso Noturno</a></li>
+                <li><a href="#">Vestibular</a></li>
+                <li><a href="#">Calendário Letivo UFPR</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Extensão <i class="far fa-angle-down"></i></a>
+              <ul>
+                <li><a href="#">Projeto 1</a></li>
+                <li><a href="#">Projeto 2</a></li>
+                <li><a href="#">Projeto 3</a></li>
+                <li><a href="#">Projeto 4</a></li>
+                <li><a href="#">Projeto 5</a></li>
+                <li><a href="#">Projeto 6</a></li>
+                <li><a href="#">Projeto 7</a></li>
+                <li><a href="#">Projeto 8</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Pós Graduação <i class="far fa-angle-down"></i></a>
+              <ul>
+                <li><a href="#">PIPE</a></li>
+                <li><a href="#">PGMEC</a></li>
+                <li><a href="#">InSTA</a></li>
+                <li><a href="#">Projetos de Pesquisa</a></li>
+                <li><a href="#">Iniciação Científica</a></li>
+                <li><a href="#">Laboratório</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Notícias</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+          </ul>
         </nav>
+      </div>
+
+      <!-- nav>ul>li*7 - Menu do Header-->
     </header>
 
     <main>
-        <!-- Banner slider com radio buttons do lado esquerdo -->
-        <!-- 4 botões do lado direito -->
-        <section class="desktop">
-            <ul class="banner">
-                <li><a href="#"><img src="https://picsum.photos/200" alt="" class="img-banner"></a></li>
-                <li><a href="#"><img src="https://picsum.photos/200" alt="" class="img-banner"></a></li>
-                <li><a href="#"><img src="https://picsum.photos/200" alt="" class="img-banner"></a></li>
-                <li><a href="#"><img src="https://picsum.photos/200" alt="" class="img-banner"></a></li>
-            </ul>
-            <div class="botoes-sou">
-                <button>Sou Vestibulando</button>
-                <button>Sou Aluno DEMEC</button>
-                <button>Sou Egresso DEMEC</button>
-                <button>Sou Professor DEMEC</button>
-            </div>
-        </section>
+      <!-- Banner slider com radio buttons do lado esquerdo -->
+      <!-- 4 botões do lado direito -->
+      <section class="desktop">
+        <ul class="banner">
+          <li>
+            <a href="#"
+              ><img src="https://picsum.photos/200" alt="" class="img-banner"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="https://picsum.photos/200" alt="" class="img-banner"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="https://picsum.photos/200" alt="" class="img-banner"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="https://picsum.photos/200" alt="" class="img-banner"
+            /></a>
+          </li>
+        </ul>
+        <div class="botoes-sou">
+          <button>Sou Vestibulando</button>
+          <button>Sou Aluno DEMEC</button>
+          <button>Sou Egresso DEMEC</button>
+          <button>Sou Professor DEMEC</button>
+        </div>
+      </section>
 
-        <article class="noticias">
-            <!-- carrossel de últimas notícias -->
-            <h2>Últimas Notícias</h2>
-            <ul class="container-noticias">
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
-                        <h3>Título da notícia 1</h3>
-                        <p>Texto 1</p>
-                    </a>                    
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
-                        <h3>Título da notícia 2</h3>
-                        <p>Texto 2</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
-                        <h3>Título da notícia 3</h3>
-                        <p>Texto 3</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
-                        <h3>Título da notícia 4</h3>
-                        <p>Texto 4</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="" class="img-noticia">
-                        <h3>Título da notícia 5</h3>
-                        <p>Texto 5</p>
-                    </a>
-                </li>
-            </ul>
-            <div class="container-controller">
-                <i class="fas fa-angle-left"></i>
-                <i class="fas fa-angle-right"></i>
-            </div>
-            
-        </article>
+      <article class="noticias">
+        <!-- carrossel de últimas notícias -->
+        <h2>Últimas Notícias</h2>
+        <ul class="container-noticias">
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" class="img-noticia" />
+              <h3>Título da notícia 1</h3>
+              <p>Texto 1</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" class="img-noticia" />
+              <h3>Título da notícia 2</h3>
+              <p>Texto 2</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" class="img-noticia" />
+              <h3>Título da notícia 3</h3>
+              <p>Texto 3</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" class="img-noticia" />
+              <h3>Título da notícia 4</h3>
+              <p>Texto 4</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" class="img-noticia" />
+              <h3>Título da notícia 5</h3>
+              <p>Texto 5</p>
+            </a>
+          </li>
+        </ul>
+        <div class="container-controller">
+          <i class="fas fa-angle-left"></i>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </article>
 
-        <aside class="botoes-aside">
-            <!-- Botões circulares (4) -->
-            <div class="botoes-flex botoes-cima">
-                <a href="#"><button>Botão 1</button></a>
-                <a href="#"><button>Botão 2</button></a>
-            </div>
+      <aside class="botoes-aside">
+        <!-- Botões circulares (4) -->
+        <div class="botoes-flex botoes-cima">
+          <a href="#"><button>Botão 1</button></a>
+          <a href="#"><button>Botão 2</button></a>
+        </div>
 
-            <div class="botoes-flex botoes-baixo">
-                <a href="#"><button>Botão 3</button></a>
-                <a href="#"><button>Botão 4</button></a>
-            </div>
-        </aside>
+        <div class="botoes-flex botoes-baixo">
+          <a href="#"><button>Botão 3</button></a>
+          <a href="#"><button>Botão 4</button></a>
+        </div>
+      </aside>
 
-        <aside class="parceiros">
-            <!-- Parceiros -->
-            <h2>Parceiros</h2>
-            <ul class="container-parceiros">
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="">
-                        <!-- <p>Parceiro 1</p> -->
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="">
-                        <!-- <p>Parceiro 1</p> -->
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="">
-                        <!-- <p>Parceiro 1</p> -->
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="">
-                        <!-- <p>Parceiro 1</p> -->
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="https://picsum.photos/300" alt="">
-                        <!-- <p>Parceiro 1</p> -->
-                    </a>
-                </li>
-            </ul>
-            <div class="container-controller2">
-                <i class="fas fa-angle-left"></i>
-                <i class="fas fa-angle-right"></i>
-            </div>
-        </aside>
+      <aside class="parceiros">
+        <!-- Parceiros -->
+        <h2>Parceiros</h2>
+        <ul class="container-parceiros">
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" />
+              <!-- <p>Parceiro 1</p> -->
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" />
+              <!-- <p>Parceiro 1</p> -->
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" />
+              <!-- <p>Parceiro 1</p> -->
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" />
+              <!-- <p>Parceiro 1</p> -->
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="https://picsum.photos/300" alt="" />
+              <!-- <p>Parceiro 1</p> -->
+            </a>
+          </li>
+        </ul>
+        <div class="container-controller2">
+          <i class="fas fa-angle-left"></i>
+          <i class="fas fa-angle-right"></i>
+        </div>
+      </aside>
     </main>
 
     <footer>
-        <!-- Breve descrição do endereço, logo da UFPR e do DEMEC à direita.  -->
-        <div>
-            <p>DEMEC | Departamento de Engenharia Mecânica</p>
-            <p>Bloco IV do Setor de Tecnologia | Centro Politécnico (III)</p>
-            <p>Bairro Jardim das Américas | Curitiba | Paraná</p>
-        </div>
+      <!-- Breve descrição do endereço, logo da UFPR e do DEMEC à direita.  -->
+      <div>
+        <p>DEMEC | Departamento de Engenharia Mecânica</p>
+        <p>Bloco IV do Setor de Tecnologia | Centro Politécnico (III)</p>
+        <p>Bairro Jardim das Américas | Curitiba | Paraná</p>
+      </div>
 
-        <div class="container-imagens">
-            <img src="https://picsum.photos/300" alt="">
-            <img src="https://picsum.photos/300" alt="">
-        </div>
+      <div class="container-imagens">
+        <img src="https://picsum.photos/300" alt="" />
+        <img src="https://picsum.photos/300" alt="" />
+      </div>
     </footer>
 
     <!-- <script type ="module" src="./src/app.js"></script> -->
-    
+
     <!--Script sliders-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script src="./src/controllers/banner.js"></script>
@@ -270,8 +257,14 @@
     <script src="./src/controllers/parceiros.js"></script>
     <script src="./src/app.js"></script>
     <!--Script menu-->
-    <script type="text/javascript" src="./src/models/jquery-1.10.1.min.js"></script>
-    <script type="text/javascript" src="./src/models/ace-responsive-menu.js"></script>
-</body>
-
+    <script
+      type="text/javascript"
+      src="./src/models/jquery-1.10.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/models/ace-responsive-menu.js"
+    ></script>
+    <script type="text/javascript" src="./src/controllers/menu.js"></script>
+  </body>
 </html>
