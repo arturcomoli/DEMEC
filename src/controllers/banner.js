@@ -2,7 +2,7 @@ var slider = tns({
   container: ".banner",
   items: 1,
   speed: 600,
-  autoplay: false,
+  autoplay: true,
   autoplayTimeout: 3500,
   autoplayButtonOutput: false,
   swipeAngle: false,
